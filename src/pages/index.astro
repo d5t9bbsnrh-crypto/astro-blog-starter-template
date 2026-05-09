@@ -1,50 +1,99 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+astrro---
 ---
 
-<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RLT Music and Film Works</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #1a1a1a, #3a3a3a);
+        color: white;
+      }
+
+      header {
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      header img {
+        max-width: 320px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #d0d0d0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      nav a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #999;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="/logo.png" alt="RLT Logo" />
+
+      <h1>RLT Music and Film Works</h1>
+
+      <p>
+        Music • Film • Entertainment • Creative Media
+      </p>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/artists">Artists</a>
+        <a href="/store">Store</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>New Single Coming 2026</h2>
+
+      <p>
+        Official music releases, artist features, film projects,
+        and entertainment media.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 RLT Music and Film Works
+    </footer>
+  </body>
 </html>
