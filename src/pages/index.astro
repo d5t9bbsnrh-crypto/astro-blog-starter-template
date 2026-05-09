@@ -1,58 +1,74 @@
 ---
-<section class="hero">
-  <h1>RLT Music and Film Works</h1>
-  <p>Music • Film • Production • Entertainment</p>
-  <h2>New Single Coming 2026</h2>
-  <a href="#contact">Contact RLT</a>
-</section>
+---
 
-<section>
-  <h2>About RLT</h2>
-  <p>
-    RLT Music and Film Works is an entertainment company focused on music production,
-    artist development, film projects, creative media, merchandising, and live entertainment.
-  </p>
-</section>
+<html lang="en">
+  <head>
+    <title>RLT Music and Film Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>10134 6th Street Suite H, Rancho Cucamonga, CA 91730</p>
-  <p>Tel: (219) 201-6827</p>
-</section>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <h1>RLT Music and Film Works</h1>
+        <p>Music • Film • Artist Development • Entertainment Production</p>
+        <a href="#contact" class="button">Contact Us</a>
+      </section>
+
+      <section class="content">
+        <h2>Welcome to RLT</h2>
+        <p>
+          RLT Music and Film Works supports artists, music projects, film production,
+          creative branding, and entertainment business development.
+        </p>
+      </section>
+
+      <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>10134 6th Street Suite H, Rancho Cucamonga, CA 91730</p>
+        <p>Tel: (219) 201-6827</p>
+      </section>
+    </main>
+  </body>
+</html>
 
 <style>
   body {
     margin: 0;
-    background: #111;
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ec;
+    color: #111;
+  }
+
+  .page {
+    min-height: 100vh;
   }
 
   .hero {
-    min-height: 80vh;
-    background: #111;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #111, #3b2a12, #c59b3c);
+    color: white;
     text-align: center;
-    padding: 120px 20px;
+    padding: 40px 20px;
   }
 
   h1 {
-    color: #d4af37;
     font-size: 52px;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
   }
 
-  h2 {
-    color: #d4af37;
+  .hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-
-  a {
-    display: inline-block;
-    margin-top: 25px;
-    background: #d4af37;
+  .button {
+    background: #c59b3c;
     color: #111;
     padding: 14px 28px;
     border-radius: 30px;
@@ -60,8 +76,20 @@
     font-weight: bold;
   }
 
-  section {
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 25px;
     text-align: center;
-    padding: 60px 20px;
+  }
+
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
   }
 </style>
