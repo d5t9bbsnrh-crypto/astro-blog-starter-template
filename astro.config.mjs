@@ -5,4 +5,3 @@ public/
 src/
   pages/
     index.astro
-</html>
