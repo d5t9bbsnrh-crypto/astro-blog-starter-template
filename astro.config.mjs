@@ -1,7 +1,5 @@
-public/
-  images/
-    rlt-homepage.png
+import { defineConfig } from 'astro/config';
 
-src/
-  pages/
-    index.astro
+export default defineConfig({
+  site: 'https://rltmusicandfilmworks.com'
+});
