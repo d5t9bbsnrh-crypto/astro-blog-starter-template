@@ -1,17 +1,37 @@
-// @ts-check
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
+---
+---
 
-import cloudflare from "@astrojs/cloudflare";
+<html lang="en">
+  <head>
+    <title>RLT Music and Film Works</title>
 
-// https://astro.build/config
-export default defineConfig({
-	site: "https://example.com",
-	integrations: [mdx(), sitemap()],
-	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
-	}),
-});
+    <style>
+      body {
+        margin: 0;
+        background: black;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+
+      .hero {
+        width: 100%;
+      }
+
+      .hero img {
+        width: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="hero">
+      <img
+        src="/images/rlt-homepage.png"
+        alt="RLT Music and Film Works Homepage"
+      />
+    </section>
+
+  </body>
+</html>
