@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>RLT Music & Filmworks</title>
 
     <style>
@@ -14,44 +15,81 @@
         box-sizing:border-box;
       }
 
+      html,
+      body{
+        width:100%;
+        height:100%;
+      }
+
       body{
         background:#000;
+        color:#fff;
         font-family:Arial, Helvetica, sans-serif;
         overflow-x:hidden;
       }
 
       .hero{
-        width:100%;
-        height:100vh;
+        position:relative;
 
-        background-image:url('/images/rlt-homepage.png');
+        width:100%;
+        min-height:100vh;
+
+        background:
+          linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+          ),
+          url("/images/rlt-homepage.png");
+
         background-size:cover;
-        background-position:center;
+        background-position:center center;
         background-repeat:no-repeat;
-      }
-
-      .overlay{
-        width:100%;
-        height:100%;
-        background:rgba(0,0,0,.35);
 
         display:flex;
-        flex-direction:column;
         justify-content:center;
         align-items:center;
 
-        color:white;
         text-align:center;
+        padding:40px 20px;
+      }
+
+      .content{
+        max-width:900px;
       }
 
       h1{
-        font-size:4rem;
-        letter-spacing:4px;
+        font-size:clamp(2.8rem, 7vw, 5.5rem);
+        letter-spacing:5px;
+        margin-bottom:20px;
       }
 
       p{
-        margin-top:20px;
-        font-size:1.2rem;
+        font-size:clamp(1rem, 2vw, 1.5rem);
+        line-height:1.6;
+      }
+
+      .buttons{
+        margin-top:40px;
+
+        display:flex;
+        gap:20px;
+        justify-content:center;
+        flex-wrap:wrap;
+      }
+
+      .btn{
+        padding:14px 30px;
+        border:2px solid white;
+
+        color:white;
+        text-decoration:none;
+
+        transition:.3s ease;
+      }
+
+      .btn:hover{
+        background:white;
+        color:black;
       }
     </style>
   </head>
@@ -59,9 +97,26 @@
   <body>
 
     <section class="hero">
-      <div class="overlay">
+
+      <div class="content">
+
         <h1>RLT MUSIC & FILMWORKS</h1>
 
+        <p>
+          Real Music. Real Stories. Real Impact.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn">Explore Music</a>
+          <a href="#" class="btn">View Films</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </body>
+</html>
         <p>
           Real Music. Real Stories. Real Impact.
         </p>
